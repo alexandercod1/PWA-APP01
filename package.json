@@ -8,5 +8,14 @@
     "onchange": "^7.1.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0"
-  }
+  },
+  "scripts": {
+    "scss": "onchange sass styles.scss styles/style.css"
+  },
+  "name": "pwa-app01",
+  "description": "APP",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC"
 }

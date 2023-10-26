@@ -1,4 +1,15 @@
 // styles.scss
 h1 {
-    color: $orange-color;
+    color: blue;
   }
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+body{
+  color: orange;
+}
