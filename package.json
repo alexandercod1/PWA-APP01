@@ -12,8 +12,8 @@
   },
   "scripts": {
     "scss": "onchange sass styles.scss styles/style.css",
-    
-    "compress-images": "squoosh-cli  bild.png"
+    "compress-images": "squoosh-cli  bild.png",
+    "lint-css": "npx csslint \"style/styles.css\""
   },
   "name": "pwa-app01",
   "description": "APP",
