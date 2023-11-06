@@ -3,7 +3,11 @@
 let CACHE_NAME = 'my-cache';
 let urlsToCache = [
     'style/styles.css',    
-    'main.js'
+    'main.js',
+    'index.html',
+    'icon/flappy-bird-icon.png'
+    
+
  
     ];
  
