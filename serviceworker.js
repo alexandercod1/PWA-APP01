@@ -1,25 +1,20 @@
 // service-worker.js
-
-const cacheName = 'PWA-APP01';
-
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        'style/styles.css',
-        '/main.js',
-        // Lägg till fler resurser som du vill cachas här
-      ]);
-    })
-  );
+// Perform install steps
+let CACHE_NAME = 'my-cache';
+let urlsToCache = [
+    'style/styles.css',    
+    'main.js'
+ 
+    ];
+ 
+self.addEventListener('install', function(event) {
+// Perform install steps
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+        .then(function(cache) {
+            console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+        })
+    );
 });
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
-});
