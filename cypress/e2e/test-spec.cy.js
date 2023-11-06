@@ -7,7 +7,7 @@ describe('template spec', () => {
 describe('Button Test', () => {
   it('Clicks the button and starts the game', () => {
     // sidan där din knapp finns
-    cy.visit('PWA-APP01/index.html');
+    cy.visit('/index.html');
 
     // Klicka på knappen med hjälp av dess CSS-klass
     cy.get('.btn.btn-warning').click();

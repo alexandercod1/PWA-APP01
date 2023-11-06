@@ -1,0 +1,15 @@
+{
+    "name": "PWA-APP01", 
+    "short_name": "PWA-APP01", 
+    "theme_color": "#FFA500", 
+    "background_color": "#fff",
+    "display": "standalone",  
+    "orientation": "portrait",  
+    "start_url": "/index.html",
+    "icons":[
+
+        {
+            "src": "/icon/flappy-bird-icon.png"  
+        }
+    ]
+}

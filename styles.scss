@@ -99,3 +99,9 @@ h1{
   z-index: 4;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 14px;   /* anppasa till mobil skärmen typ*/
+  }
+}
+
