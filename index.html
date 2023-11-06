@@ -10,18 +10,24 @@
 
     <link rel="stylesheet" href="style/styles.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Welcome to my Web App.</h1>
+        Welcome to my Web App
     </header>
-    <img src="bild.png">
-    <button type="button" class="btn btn-primary">Primary Button</button>
-    <button type="button" class="btn btn-secondary">Secondary Button</button>
 
+    <div id="spelets-continer">
+        <div id="hinder"></div>
+        <div id="hal"></div>
+        <div id="Bird"></div>
 
+    <div id="gameOverScreen">
+            <h1>Game Over</h1>
+            <p>Your Score: <span id="gameOverScore">0</span></p>
+            <button class="btn btn-warning"onclick="startGame()">Start Game</button>
+        </div>
+    </div>
 
+    <script src="main.js"></script>
 </body>
 
 </html>

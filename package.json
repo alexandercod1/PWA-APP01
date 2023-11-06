@@ -6,13 +6,15 @@
     "csslint": "^1.0.5"
   },
   "devDependencies": {
+    "cypress": "^13.4.0",
+    "node-sass": "^9.0.0",
     "onchange": "^7.1.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0"
   },
   "scripts": {
-    "scss": "onchange sass styles.scss styles/style.css",
-    "compress-images": "squoosh-cli  bild.png",
+    "scss": "onchange sass styles.scss style/styles.css",
+    "compress-images": "squoosh-cli  style/bg.png",
     "lint-css": "npx csslint \"style/styles.css\""
   },
   "name": "pwa-app01",
