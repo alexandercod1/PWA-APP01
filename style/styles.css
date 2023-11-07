@@ -2,33 +2,37 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h1 {
-  color: black; }
+  color: black;
+}
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background: linear-gradient(to right, #333, #FFA500);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 header {
   background: linear-gradient(to right, #333, #FFA500);
   color: black;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Lägg till skugga */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägg till skugga */
   padding: 10px;
-  width: 100%; }
+  width: 100%;
+}
 
 h1 {
-  color: black; }
+  color: black;
+}
 
-/*# sourceMappingURL=styles.css.map */
+
 #spelets-continer {
   background-image: url("bg.png");
   background-size: 400px 500px;
@@ -40,44 +44,46 @@ h1 {
   margin: auto;
   margin: top 25px;
   position: relative;
-  overflow: hidden;
-  /* så att inte visa innehåll eller element ska gå utanför spelts continer*/ }
+  overflow: hidden; /* så att inte visa innehåll eller element ska gå utanför spelts continer*/
+}
 
 #hinder {
-  width: 50px;
-  /* Bredd på själva div-elementet */
+  width: 50px; /* Bredd på själva div-elementet */
   height: 500px;
   background-color: black;
   position: absolute;
   top: 0;
   left: 100%;
-  animation: hinder-anim 2s infinite linear;
-  /* infinite är typ loop så att den ska försätta */
-  z-index: 1;
-  /* vi kommer sedan ha z-index 2 o 3 osv, denna koden använder vi för att visa element kommer plaseras på varandra*/ }
+  animation: hinder-anim 2s infinite linear; /* infinite är typ loop så att den ska försätta */
+  z-index: 1; /* vi kommer sedan ha z-index 2 o 3 osv, denna koden använder vi för att visa element kommer plaseras på varandra*/
+}
 
 #hal {
   width: 50px;
   height: 180px;
-  background-color: #ff9d00;
+  background-color: rgb(255, 157, 0);
   position: absolute;
   left: 100%;
   animation: hinder-anim 2s infinite linear;
-  z-index: 2; }
+  z-index: 2;
+}
 
 @keyframes hinder-anim {
   0% {
-    left: 100%; }
+    left: 100%;
+  }
   100% {
-    left: -60px; } }
-
+    left: -60px;
+  }
+}
 #Bird {
   width: 20%;
   height: 20%;
   content: url("bird.png");
   position: absolute;
   top: 100px;
-  z-index: 3; }
+  z-index: 3;
+}
 
 #gameOverScreen {
   display: none;
@@ -87,4 +93,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 4; }
+  z-index: 4;
+}
+
+/*# sourceMappingURL=styles.css.map */
