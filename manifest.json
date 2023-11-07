@@ -5,12 +5,12 @@
     "background_color": "#fff",
     "display": "standalone",  
     "orientation": "portrait",  
-    "start_url": "index.html",
+    "start_url": "/",
     "icons":[
 
         {
             "src": "/icon/bird-icon.png",
-            "sizes": "50x50",
+            "sizes": "192x192",
 			"type": "image/png"
         }
     ]

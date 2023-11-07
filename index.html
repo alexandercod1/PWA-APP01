@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWA</title>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
       <!-- Länka Bootstrap CSS-fil från node_modules01 -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -33,17 +32,15 @@
     </div>
 
     <script src="main.js"></script>
-
-    <script>
+ <script>
+    //To enhance user experience while offline
 
 let registration = null;
-
-console.log("start")
 
 function register_service__worker() {
 	if ("serviceWorker" in navigator) {
 		window.navigator.serviceWorker
-			.register("./serviceworker.js", { scope: "./" })
+			.register("./serviceWorker.js", { scope: "./" })
 			.then((res) => {
 				registration = res;
 				console.log("Service worker successfully registerd");
@@ -69,6 +66,8 @@ function unregister_service__worker() {
 }
 
 register_service__worker();
+// unregister_service__worker();
+
 
     
   </script>
