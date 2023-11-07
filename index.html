@@ -31,20 +31,21 @@
 
     <script src="main.js"></script>
  <script>
-    //To enhance user experience while offline
+   //To enhance user experience while offline
 
 let registration = null;
 
 function register_service__worker() {
 	if ("serviceWorker" in navigator) {
 		window.navigator.serviceWorker
-			.register("./serviceWorker.js", { scope: "./" })
+			.register("./service-worker.js", { scope: "./" })
 			.then((res) => {
 				registration = res;
 				console.log("Service worker successfully registerd");
 			})
 			.catch((err) => {
-				console.log("Service worker not registerd");
+				// console.log("Service worker not registerd");
+				console.error(err);
 			});
 	}
 }
@@ -66,8 +67,6 @@ function unregister_service__worker() {
 register_service__worker();
 // unregister_service__worker();
 
-
-    
   </script>
 
 </body>
