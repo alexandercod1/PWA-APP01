@@ -2,13 +2,13 @@
 // Perform install steps
 // serviceworker.js
 
-const CACHE_NAME = 'my-cache-v1';
-const urlsToCache = [
-    '/',
-    'index.html',
-    'style/styles.css',
-    'main.js'
-];
+//const CACHE_NAME = 'my-cache-v1';
+//const urlsToCache = [
+    //'/',
+    //'index.html',
+    //'style/styles.css',
+   // 'main.js'
+//
 
 // self.addEventListener('install', function (event) {
 //     event.waitUntil(
@@ -26,7 +26,6 @@ const urlsToCache = [
 //         })
 //     );
 // });
-
 
 self.addEventListener('install', event => {
     event.waitUntil(
