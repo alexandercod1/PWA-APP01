@@ -32,10 +32,48 @@
 
     <script>
     
-    if (navigator && navigator.serviceWorker)
-     {
-        navigator.serviceWorker.register('serviceworker.js');
-    }
+    // if ('serviceWorker' in navigator) {
+    //         navigator.serviceWorker.register('/serviceworker.js')
+    //             .then(function (registration) {
+    //                 console.log('Service Worker registrerad med omfånget:', registration.scope);
+    //             })
+    //             .catch(function (error) {
+    //                 console.error('Service Worker registrering misslyckades:', error);
+    //             });
+    //     }
+
+    let registration = null;
+
+function register_service__worker() {
+	if ("serviceWorker" in navigator) {
+		window.navigator.serviceWorker
+			.register("./serviceworker.js", { scope: "./" })
+			.then((res) => {
+				registration = res;
+				console.log("Service worker successfully registerd");
+			})
+			.catch((err) => {
+				console.log("Service worker not registerd");
+			});
+	}
+}
+
+function unregister_service__worker() {
+	navigator.serviceWorker
+		.getRegistrations()
+		.then((registrations) => {
+			registrations.forEach((registration) => {
+				registration.unregister();
+				console.log("Service worker unregistered");
+			});
+		})
+		.catch((err) => {
+			console.log("could not register service worker");
+		});
+}
+
+register_service__worker();
+
     
   </script>
 
