@@ -1,6 +1,5 @@
-// service-worker.js
 // Perform install steps
-// serviceworker.js
+// serviceWorker.js
 
 self.addEventListener('install', event => {
     event.waitUntil(
@@ -11,9 +10,15 @@ self.addEventListener('install', event => {
                     './style/styles.css',
                     './main.js'
                 ]);
-                console.log('Assets cached')
+               
                 
             })
+            .then(() => {
+                
+             console.log('Assets cached');
+
+            })
+
             .catch(err => console.log('could not cache assets')) 
-    )  
-})
+    ); 
+});
