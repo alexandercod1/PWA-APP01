@@ -1,9 +1,17 @@
 {
     "name": "PWA-APP01", 
-    "short_name": "PWA-APP01", 
+    "short_name": "PWA", 
     "theme_color": "#FFA500", 
     "background_color": "#fff",
     "display": "standalone",  
     "orientation": "portrait",  
-    "start_url": "index.html"
+    "start_url": "index.html",
+    "icons":[
+
+        {
+            "src": "/icon/bird-icon.png",
+            "sizes": "192x192",
+			"type": "image/png"
+        }
+    ]
 }
