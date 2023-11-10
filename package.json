@@ -13,7 +13,7 @@
     "stylelint-config-standard": "^34.0.0"
   },
   "scripts": {
-    "scss": "onchange sass styles.scss style/styles.css",
+    "scss": " onchange sass styles.scss \"style/styles.css\"",
     "compress-images": "squoosh-cli  style/bg.png",
     "lint-css": "npx csslint \"style/styles.css\""
   },
