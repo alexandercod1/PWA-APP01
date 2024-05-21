@@ -1,0 +1,5 @@
+colorscheme
+#E8E8E8
+#F4B834
+#232D37
+#386C93
